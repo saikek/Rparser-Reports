@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <H1>HELLO WORLD!!!</H1>
-  </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Balkan Dashboard</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet" />
+
+    <link href="assets/styles.css" rel="stylesheet" />
+
+    <!-- //HEAT STUFF -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <!-- <link rel="stylesheet" href="vendor/odometer-theme-default.css" /> -->
+
+    <style>
+        #map {
+            width: 100%;
+            height: 380px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="content-area">
+            <div class="container-fluid">
+                <div class="main">
+
+                    <div class="row mt-4 mb-2">
+                        <div class="col-md-3 mr-2">
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Total Flats</h5>
+                                    <p class="card-text">4444</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mr-2 ml-2">
+                            <div class="card" style="width: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">New Flats</h5>
+                                    <p class="card-text">16</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-md-12">
+                            <!-- <div class="col-md-6"> -->
+                            <div class="box box1">
+                                <div id="spark1"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4">
+                                <div class="box box2">
+                                    <div id="spark2"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box box3">
+                                    <div id="spark3"></div>
+                                </div>
+                            </div> -->
+                    </div>
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-md-6">
+                            <div class="box">
+                                <div id="bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box">
+                                <div id="donut"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row mt-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div id="area"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div id="line"></div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    <div class="row mt-2 mb-2">
+                        <div class="col-md-12">
+                            <div class="box box1">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- installing few libraries -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script> -->  
+    <script src="data/candleFlatPrices.js"></script>
+    <script src="data/flatCountPerDistrict.js"></script>
+    <script src="data/data.js"></script>
+    <script src="assets/scripts.js"></script>
+
+    <!-- Heatmap related stuff -->
+    <script src="vendor/leaflet-heat.js"></script>
+    <script src="data/heatmap.js"></script>
+    <script src="assets/heatmap.js"></script>
+
+    <!-- Count up stuff -->
+    <script src="vendor/odometer.min.js"></script>
+    <script src="assets/countup.js"></script>
+</body>
+
 </html>
