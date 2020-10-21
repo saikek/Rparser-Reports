@@ -108,19 +108,19 @@ chartBar.render();
 
 var totalCount = document.getElementById("cntTotal");
 
-var options = {
+var heatMapCountPerSeller = {
   series: heatMapDataFlatsCountPerSeller,
   legend: {
-  show: false
-},
-chart: {
-  height: 350,
-  type: 'treemap'
-},
-title: {
-  text: 'Basic Treemap'
-}
+    show: false
+  },
+  chart: {
+    height: 380,
+    type: 'treemap'
+  },
+  title: {
+    text: 'Count of flats, sold by Seller'
+  }
 };
 
-var chart = new ApexCharts(document.querySelector("#hmSellers"), options);
+var chart = new ApexCharts(document.querySelector("#hmSellers"), heatMapCountPerSeller);
 chart.render();
