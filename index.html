@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="vendor/leaflet.css" />
     <script src="vendor/leaflet.js"></script>
 
-    <!-- <link rel="stylesheet" href="vendor/odometer-theme-default.css" /> -->
-
     <style>
         #map {
             width: 100%;
@@ -34,7 +32,7 @@
             <div class="container-fluid">
                 <div class="main">
 
-                    <div class="row mt-4 mb-2">
+                    <!-- <div class="row mt-4 mb-2">
                         <div class="col-md-3 mr-2">
                             <div class="card" style="width: 10rem;">
                                 <div class="card-body">
@@ -52,12 +50,28 @@
                                 </div>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="row mt-4 mb-2">
+                        <div class="col-md-5 mr-2">
+                            <div class="box">
+                                <div id="donut1"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 mr-2">
+                            <div class="box">
+                                <div id="donut2"></div>
+                            </div>
+                        </div>
+
+                        
                     </div>
 
                     <div class="row mt-2 mb-2">
                         <div class="col-md-12">
                             <!-- <div class="col-md-6"> -->
-                            <div class="box box1">
+                            <div class="box">
                                 <div id="spark1"></div>
                             </div>
                         </div>
@@ -107,6 +121,14 @@
                         </div>
                     </div>
 
+                    <div class="row mt-2 mb-2">
+                        <div class="col-md-12">
+                            <div class="box box1">
+                                <div id="hmSellers"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -120,16 +142,15 @@
     <script src="data/candleFlatPrices.js"></script>
     <script src="data/flatCountPerDistrict.js"></script>
     <script src="data/data.js"></script>
+    <script src="data/heatMapSellers.js"></script>
     <script src="assets/scripts.js"></script>
 
     <!-- Heatmap related stuff -->
     <script src="vendor/leaflet-heat.js"></script>
     <script src="data/heatmap.js"></script>
     <script src="assets/heatmap.js"></script>
-
-    <!-- Count up stuff -->
-    <script src="vendor/odometer.min.js"></script>
-    <script src="assets/countup.js"></script>
+    <script src="data/donuts.js"></script>
+    <script src="assets/donuts.js"></script>
 </body>
 
 </html>

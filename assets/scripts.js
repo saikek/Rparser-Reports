@@ -107,3 +107,20 @@ var chartBar = new ApexCharts(document.querySelector('#bar'), countPerDistrictLi
 chartBar.render();
 
 var totalCount = document.getElementById("cntTotal");
+
+var options = {
+  series: heatMapDataFlatsCountPerSeller,
+  legend: {
+  show: false
+},
+chart: {
+  height: 350,
+  type: 'treemap'
+},
+title: {
+  text: 'Basic Treemap'
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#hmSellers"), options);
+chart.render();
